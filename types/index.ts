@@ -5,7 +5,5 @@ export interface Profile {
 }
 
 export interface InitialState {
-    currentUser: {
-        data: Profile;
-    } | null;
+    currentUser: Profile | null;
 }

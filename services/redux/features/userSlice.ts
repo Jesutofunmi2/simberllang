@@ -3,7 +3,7 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
 const initialState: InitialState = {
-    currentUser: null,
+    currentUser: null
 };
 const userSlice = createSlice({
     name: "user",

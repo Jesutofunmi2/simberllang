@@ -3,7 +3,6 @@ import Drawer from "../Drawer/Drawer";
 import styles from "./HomeNavbar/homeNavbar.module.css";
 import dashStyles from "./DashboardNavbar/dashboardNavbar.module.css";
 import { AiOutlineClose } from "react-icons/ai";
-import Image from "next/image";
 import Link from "next/link";
 import { sidebarMenus } from "../Sidebar/data";
 import { usePathname, useRouter } from "next/navigation";
@@ -24,12 +23,7 @@ export function MobileNavbarViewHome({ open, setOpen }: MobileViewProps) {
         <>
             <Drawer open={open} setOpen={setOpen}>
                 <div className={styles.topWrap}>
-                    <Image
-                        src="/assets/images/logo.png"
-                        width="73"
-                        height="80"
-                        alt="logo"
-                    />
+        
                     <span>
                         <AiOutlineClose
                             aria-hidden="true"
@@ -74,12 +68,6 @@ export function MobileNavbarViewDash({ open, setOpen }: MobileViewProps) {
         <>
             <Drawer position="left" open={open} setOpen={setOpen}>
                 <div className={dashStyles.topWrap}>
-                    <Image
-                        src="/assets/images/logo.png"
-                        width="73"
-                        height="80"
-                        alt="logo"
-                    />
                     <span>
                         <AiOutlineClose
                             aria-hidden="true"

@@ -10,7 +10,7 @@ type Inputs = {
     name: string;
     description: string;
     files: File[];
-    status: string
+    status: string;
 };
 
 interface AddFileProps {
@@ -19,7 +19,7 @@ interface AddFileProps {
 const AddProjectForm = ({ handleAddFileAssignment }: AddFileProps) => {
     const { register, handleSubmit, reset } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (data) =>
-    handleAddFileAssignment(data, reset);
+        handleAddFileAssignment(data, reset);
 
     return (
         <>
@@ -49,7 +49,6 @@ const AddProjectForm = ({ handleAddFileAssignment }: AddFileProps) => {
                             type="file"
                             accept="image/png, image/jpeg, .pdf,"
                             placeholder="Add Attachment"
-
                         />
                         <span className="text-gray-200 text-sm block">
                             (* pdf, jpeg, png, jpg *)
@@ -65,7 +64,6 @@ const AddProjectForm = ({ handleAddFileAssignment }: AddFileProps) => {
                             type="text"
                             placeholder="Description"
                         />
-
                     </>
                 </div>
 
