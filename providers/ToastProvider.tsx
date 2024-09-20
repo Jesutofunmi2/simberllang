@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 interface ChildrenProps {
-  children: React.ReactNode
+    children: React.ReactNode;
 }
 
 export function ToastProvider({ children }: ChildrenProps) {
-  return (
-    <div className='h-full'>
-      {children}
-      <ToastContainer />
-    </div>
-  )
+    return (
+        <div className="h-full">
+            {children}
+            <ToastContainer />
+        </div>
+    );
 }

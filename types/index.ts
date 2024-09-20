@@ -1,12 +1,11 @@
-
 export interface Profile {
-    id:number
-    name: string,
-    email: string
-  }
+    id: number;
+    name: string;
+    email: string;
+}
 
 export interface InitialState {
     currentUser: {
-      data: Profile
-    } | null
-  }
+        data: Profile;
+    } | null;
+}

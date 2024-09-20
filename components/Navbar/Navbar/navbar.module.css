@@ -1,0 +1,103 @@
+.dashNav{
+    height: 100px;
+    padding: 20px 30px 0px 30px;
+     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%
+}
+
+.logoWrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.detailsAndSoundWrap .icon{
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.dashNav .headerText{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dashNav p span{
+    color: #f19c08;
+} 
+
+
+.hamburger{
+    min-width: 30px;
+    font-size: 30px;
+    display: none;
+}
+
+
+/********** MOBILE MENU CSS **********/
+
+.closeIcon{
+    align-self: flex-end;
+}
+
+.topWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobileWrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobileWrapper .list{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color:  #CBCBCB;
+    font-size: 14px;
+}
+
+
+
+.mobileWrapper li span{
+  min-width: 30px;
+}
+
+.mobileWrapper .list:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.mobileWrapper .active{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--green-color);
+    font-size: 14px;
+}
+
+  @media (max-width: 991px){
+
+    .logo{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .user span{
+        display: none;
+    }
+  }

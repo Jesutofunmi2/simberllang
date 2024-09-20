@@ -8,6 +8,13 @@ if (token) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 }
 
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+    const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+    if (csrfToken) {
+        axios.defaults.headers.common["X-CSRF-TOKEN"] = csrfToken;
+    }
+}
+
 async function makeApiCall<T = any>(
     url: string,
     method: AxiosRequestConfig["method"] = "get",
@@ -23,6 +30,7 @@ async function makeApiCall<T = any>(
             method,
             data: payload,
             baseURL,
+            withCredentials: true,
             ...axiosRequestConfig,
         });
         return data;

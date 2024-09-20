@@ -1,0 +1,100 @@
+.inputWrap {
+    /* max-width: 300px; */
+    width: 100%;
+
+    border-radius: 15px;
+    border: 1px solid #f19c00;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.inputfield {
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    border-radius: 15px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+}
+
+.card input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.inputWrap:focus {
+    outline: none !important;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 17px -5px rgba(241, 156, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 17px -5px rgba(241, 156, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -5px rgba(241, 156, 0, 0.75);
+    transition: all 0.2s ease-in-out;
+}
+
+.revealIcon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.loginBtn {
+    font-size: 20px;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(
+        45deg,
+        #ff512f 0%,
+        #f09819 51%,
+        #ff512f 100%
+    );
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.loginBtn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.loginBtn:active {
+    transform: scale(0.95);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 610px) {
+    .card {
+        margin: 0 20px;
+        height: 460px;
+    }
+
+    .card form p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .card {
+        padding: 0 10px;
+    }
+
+    .card input {
+        height: 40px;
+    }
+}
