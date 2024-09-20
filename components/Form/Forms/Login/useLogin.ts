@@ -29,9 +29,9 @@ export const useLogin = () => {
         e.preventDefault();
         try {
             let response = await Login(payloadData);
-            const token  = response?.access_token;
+            const token = response?.access_token;
             setToken(token);
-            console.log(response?.data)
+            console.log(response?.data);
             dispatch(user(response?.data));
             toast.loading("Signing you in...");
             router.push("/dashboard");
@@ -44,12 +44,12 @@ export const useLogin = () => {
             }
         }
     };
-  return {
-    revealPassword,
-    handleSubmit,
-    payloadData,
-    isLoading,
-    setPayloadData,
-    inputType
-  }
-}
+    return {
+        revealPassword,
+        handleSubmit,
+        payloadData,
+        isLoading,
+        setPayloadData,
+        inputType,
+    };
+};

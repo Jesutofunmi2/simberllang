@@ -5,142 +5,142 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logoWrap {
+}
+
+.logoWrap {
     display: flex;
     align-items: center;
     gap: 30px;
-  }
-  
-  .detailsAndSoundWrap {
+}
+
+.detailsAndSoundWrap {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
-  
-  .detailsAndSoundWrap .icon {
+}
+
+.detailsAndSoundWrap .icon {
     font-size: 27px;
     cursor: pointer;
-  }
-  
-  .dashNav .headerText {
+}
+
+.dashNav .headerText {
     font-size: 30px;
     font-weight: bold;
-  }
-  
-  .dashNav p span {
+}
+
+.dashNav p span {
     color: #f19c08;
-  }
-  
-  .user {
+}
+
+.user {
     border-left: 2px solid gray;
     display: flex;
     align-items: center;
     gap: 10px;
     height: 40px;
     padding-left: 10px;
-  }
-  
-  .user span {
+}
+
+.user span {
     font-size: 20px;
-  }
-  
-  .hamburger {
+}
+
+.hamburger {
     min-width: 30px;
     font-size: 30px;
     display: none;
-  }
-  
-  /********** MOBILE MENU CSS **********/
-  
-  .closeIcon {
+}
+
+/********** MOBILE MENU CSS **********/
+
+.closeIcon {
     align-self: flex-end;
-  }
-  
-  .topWrap {
+}
+
+.topWrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .mobileWrapper {
+}
+
+.mobileWrapper {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .mobileWrapper .list {
+}
+
+.mobileWrapper .list {
     display: flex;
     align-items: center;
     gap: 14px;
     color: #cbcbcb;
     font-size: 14px;
-  }
-  
-  .mobileWrapper li span {
+}
+
+.mobileWrapper li span {
     min-width: 30px;
-  }
-  
-  .mobileWrapper .list:hover {
+}
+
+.mobileWrapper .list:hover {
     color: gray;
     cursor: pointer;
-  }
-  
-  .mobileWrapper .active {
+}
+
+.mobileWrapper .active {
     display: flex;
     align-items: center;
     gap: 14px;
     color: var(--green-color);
     font-size: 14px;
-  }
-  
-  /* MEDIA QUERIES */
-  @media (max-width: 830px) {
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 830px) {
     .dashNav .headerText {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .user span {
-      font-size: 17px;
+        font-size: 17px;
     }
-  
+
     .detailsAndSoundWrap .icon {
-      font-size: 25px;
+        font-size: 25px;
     }
-  }
-  
-  @media (max-width: 690px) {
+}
+
+@media (max-width: 690px) {
     .dashNav .headerText {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media (max-width: 991px) {
+}
+
+@media (max-width: 991px) {
     .logo {
-      display: none;
+        display: none;
     }
-  
+
     .dashNav {
-      padding: 20px 15px 0px 15px;
+        padding: 20px 15px 0px 15px;
     }
-  
+
     .user span {
-      font-size: 15px;
+        font-size: 15px;
     }
-  
+
     .detailsAndSoundWrap .icon {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .hamburger {
-      display: block;
+        display: block;
     }
-  }
-  
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
     .user span {
-      display: none;
+        display: none;
     }
-  }
+}

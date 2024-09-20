@@ -44,12 +44,12 @@ export const useRegister = () => {
             }
         }
     };
-  return {
-    revealPassword,
-    handleSubmit,
-    payloadData,
-    isLoading,
-    setPayloadData,
-    inputType
-  }
-}
+    return {
+        revealPassword,
+        handleSubmit,
+        payloadData,
+        isLoading,
+        setPayloadData,
+        inputType,
+    };
+};

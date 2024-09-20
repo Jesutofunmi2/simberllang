@@ -3,15 +3,10 @@ import { ToastContainer } from "react-toastify";
 import styles from "./register.module.css";
 import { useRegister } from "./useRegister";
 
-
 const RegisterForm = () => {
-   const {
-    revealPassword,
-    handleSubmit,
-    setPayloadData,
-    inputType
-   } = useRegister();
-   
+    const { revealPassword, handleSubmit, setPayloadData, inputType } =
+        useRegister();
+
     return (
         <div className="min-h-screen bg-blue-400 p-4 md:p-16">
             <div className="flex items-center justify-center text-brown gap-10">
@@ -24,7 +19,7 @@ const RegisterForm = () => {
                     Sign up to create an account.
                 </p>
                 <>
-                <span className={styles.inputWrap}>
+                    <span className={styles.inputWrap}>
                         <input
                             type="text"
                             name="name"
@@ -107,11 +102,11 @@ const RegisterForm = () => {
                         )}
                     </span>
                 </>
-            <div className="text-center mt-12">
-            <button type="submit" className={styles.loginBtn}>
-              SIGN UP
-            </button>
-            </div>
+                <div className="text-center mt-12">
+                    <button type="submit" className={styles.loginBtn}>
+                        SIGN UP
+                    </button>
+                </div>
             </form>
             <ToastContainer autoClose={5000} />
         </div>

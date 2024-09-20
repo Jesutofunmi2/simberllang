@@ -1,85 +1,81 @@
-.dashNav{
+.dashNav {
     height: 100px;
     padding: 20px 30px 0px 30px;
-     box-sizing: border-box;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:60%
+    width: 60%;
 }
 
-.logoWrap{
+.logoWrap {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.logo{
+.logo {
     width: 70px;
     height: 70px;
 }
 
-.detailsAndSoundWrap .icon{
+.detailsAndSoundWrap .icon {
     font-size: 27px;
     cursor: pointer;
 }
 
-.dashNav .headerText{
+.dashNav .headerText {
     font-size: 30px;
     font-weight: bold;
 }
 
-.dashNav p span{
+.dashNav p span {
     color: #f19c08;
-} 
+}
 
-
-.hamburger{
+.hamburger {
     min-width: 30px;
     font-size: 30px;
     display: none;
 }
 
-
 /********** MOBILE MENU CSS **********/
 
-.closeIcon{
+.closeIcon {
     align-self: flex-end;
 }
 
-.topWrap{
+.topWrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.mobileWrapper{
+.mobileWrapper {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.mobileWrapper .list{
+.mobileWrapper .list {
     display: flex;
     align-items: center;
     gap: 14px;
-    color:  #CBCBCB;
+    color: #cbcbcb;
     font-size: 14px;
 }
 
-
-
-.mobileWrapper li span{
-  min-width: 30px;
+.mobileWrapper li span {
+    min-width: 30px;
 }
 
-.mobileWrapper .list:hover{
+.mobileWrapper .list:hover {
     color: gray;
     cursor: pointer;
 }
 
-.mobileWrapper .active{
+.mobileWrapper .active {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -87,17 +83,16 @@
     font-size: 14px;
 }
 
-  @media (max-width: 991px){
-
-    .logo{
+@media (max-width: 991px) {
+    .logo {
         display: none;
     }
 
-    .hamburger{
+    .hamburger {
         display: block;
     }
 
-    .user span{
+    .user span {
         display: none;
     }
-  }
+}

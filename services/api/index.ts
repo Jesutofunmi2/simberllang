@@ -9,7 +9,9 @@ if (token) {
 }
 
 if (typeof window !== "undefined" && typeof document !== "undefined") {
-    const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+    const csrfToken = document
+        .querySelector('meta[name="csrf-token"]')
+        ?.getAttribute("content");
     if (csrfToken) {
         axios.defaults.headers.common["X-CSRF-TOKEN"] = csrfToken;
     }

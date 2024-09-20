@@ -3,15 +3,10 @@ import { ToastContainer } from "react-toastify";
 import styles from "./login.module.css";
 import { useLogin } from "./useLogin";
 
-
 const LoginForm = () => {
-   const {
-    revealPassword,
-    handleSubmit,
-    setPayloadData,
-    inputType
-   } = useLogin();
-   
+    const { revealPassword, handleSubmit, setPayloadData, inputType } =
+        useLogin();
+
     return (
         <div className="min-h-screen bg-blue-400 p-4 md:p-16">
             <div className="flex items-center justify-center text-brown gap-10">
@@ -66,11 +61,11 @@ const LoginForm = () => {
                         )}
                     </span>
                 </>
-            <div className="text-center mt-12">
-            <button type="submit" className={styles.loginBtn}>
-              SIGN IN
-            </button>
-            </div>
+                <div className="text-center mt-12">
+                    <button type="submit" className={styles.loginBtn}>
+                        SIGN IN
+                    </button>
+                </div>
             </form>
             <ToastContainer autoClose={5000} />
         </div>
