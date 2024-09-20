@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 import { getToken, removeToken } from "./token";
 
 const token = getToken();
-const baseURL = "http://localhost:8000/";
+const baseURL = "http://35.174.253.210/";
 
 if (token) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
