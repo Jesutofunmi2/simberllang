@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction } from "react";
 import Drawer from "../Drawer/Drawer";
-import styles from "./HomeNavbar/homeNavbar.module.css";
+import styles from "../Navbar/HomeNavbar/HomeNavbar.module.css";
 import dashStyles from "./DashboardNavbar/dashboardNavbar.module.css";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
@@ -23,7 +23,6 @@ export function MobileNavbarViewHome({ open, setOpen }: MobileViewProps) {
         <>
             <Drawer open={open} setOpen={setOpen}>
                 <div className={styles.topWrap}>
-        
                     <span>
                         <AiOutlineClose
                             aria-hidden="true"
